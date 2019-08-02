@@ -1,0 +1,38 @@
+.servicing{
+    background-color: $light-accent;
+    &-list{
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        &-row{
+            display: flex;
+            width: 100%;
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+            background-color: white;
+            margin: 10px 10px;
+            &-logo {
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 125px;
+                }
+            }
+            &:hover{
+                
+            }
+        }
+    }
+    .btn-servicing{
+        border: 2px solid black;
+        &:hover{
+            border: 2px solid white;
+            color: white;
+        }
+    }
+}

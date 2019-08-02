@@ -1,0 +1,35 @@
+.about{
+    &-container{
+        &-item{
+            margin-bottom: 100px;
+            &-name,&-desc{
+                text-align: center;
+            }
+            &-logo{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 100px;
+                    margin-bottom: 20px;
+                }
+            }
+            &-name{
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            &-desc{
+                font-size: 15px;
+            }
+        }
+        &-desc{
+            text-align: center;
+            margin: 100px 0px;
+            h2 b{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -8,6 +8,11 @@
 	<title>Web Developer Project</title>
 
 	<link rel="icon" href="img/favicon.ico">
+	<style>
+		body{
+			opacity: 0;
+		}
+	</style>
 
 </head>
 
@@ -19,14 +24,14 @@
 					<img src="img/logo.svg" alt="" width="64">
 				</div>
 				<div class="col-md-7 header-content-links">
-					<a href="" class="header-content-links-item">Home</a>
-					<a href="" class="header-content-links-item">About</a>
-					<a href="" class="header-content-links-item">Servicing</a>
-					<a href="" class="header-content-links-item">Portfolio</a>
-					<a href="" class="header-content-links-item">Pricing</a>
-					<a href="" class="header-content-links-item">Our team</a>
-					<a href="" class="header-content-links-item">Blog</a>
-					<a href="" class="header-content-links-item">Contact us</a>
+					<a href="#home" class="header-content-links-item">Home</a>
+					<a href="#about" class="header-content-links-item">About</a>
+					<a href="#servicing" class="header-content-links-item">Servicing</a>
+					<a href="#portfolio" class="header-content-links-item">Portfolio</a>
+					<a href="#pricing" class="header-content-links-item">Pricing</a>
+					<a href="#team" class="header-content-links-item">Our team</a>
+					<a href="#blog" class="header-content-links-item">Blog</a>
+					<a href="#contact-us" class="header-content-links-item">Contact us</a>
 				</div>
 			</div>
 		</div>
@@ -38,8 +43,8 @@
 				<h4>Very suitable to support all web development projects</h4>
 			</div>
 			<div class="home-btns">
-				<button class="btn">Our services</button>
-				<button class="btn">Hire is now</button>
+				<button class="btn"><a href="#servicing">Our services</a></button>
+				<button class="btn"><a href="#">Hire is now</a></button>
 			</div>
 			<div class="home-shevron">
 				<a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -47,10 +52,88 @@
 		</div>
 	</section>
 	<section class="about" id="about">
-		
+		<div class="container about-container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="about-container-desc col-md-6 col-12 col-sm-12 ">
+					<h2><b>About us</b></h2>
+					<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione debitis consequatur alias in eos. Quisquam, debitis
+						impedit. Vel recusandae nesciunt voluptatum iste iusto explicabo veniam tempora blanditiis fugiat neque? Iste?</h4>
+				</div>
+			</div>
+				<div class="row">
+					<div class="col-md-4 about-container-item">
+						<div class="about-container-item-logo"><img src="img/icons/web.svg" alt=""></div>
+						<div class="about-container-item-name">Awesome Icons</div>
+						<div class="about-container-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+					</div>
+					<div class="col-md-4 about-container-item">
+						<div class="about-container-item-logo"><img src="img/icons/social.svg" alt=""></div>
+						<div class="about-container-item-name">One Page</div>
+						<div class="about-container-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+					</div>
+					<div class="col-md-4 col-sm-12 about-container-item">
+						<div class="about-container-item-logo"><img src="img/icons/brainstorm.svg" alt=""></div>
+						<div class="about-container-item-name">Fully Responsive</div>
+						<div class="about-container-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+					</div>
+			</div>
+		</div>
 	</section>
 	<section class="servicing" id="servicing">
-
+		<div class="servicing-desc-wrapper">
+			<div class="servicing-name">Our Services</div>
+			<div class="servicing-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam,</div>
+		</div>
+		<div class="servicing-list-wrapper container">
+			<div class="servicing-list-row">
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">1</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">2</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">3</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+			</div>
+			<div class="servicing-list-row">
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">1</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">2</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+				<div class="servicing-list-item">
+					<div class="servicing-list-item-logo"><img src="img/icons/phone.svg" alt=""></div>
+					<div class="servicing-list-item-name">3</div>
+					<div class="servicing-list-item-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti
+					quos.</div>
+					<button class="btn btn-servicing">Read more</button>
+				</div>
+			</div>
+		</div>	
 	</section>
 	<section class="portfolio" id="portfolio">
 

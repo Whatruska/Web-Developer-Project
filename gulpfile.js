@@ -26,7 +26,7 @@ function bsReload(done) { browserSync.reload(); done(); };
 
 // Custom Styles
 gulp.task('styles', function() {
-	return gulp.src('app/sass/**/*.sass')
+	return gulp.src('app/scss/**/*.scss')
 	.pipe(sass({ outputStyle: 'expanded' }))
 	.pipe(concat('styles.min.css'))
 	.pipe(autoprefixer({
@@ -97,7 +97,7 @@ gulp.task('rsync', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('app/sass/**/*.sass', gulp.parallel('styles'));
+	gulp.watch('app/scss/**/*.scss', gulp.parallel('styles'));
 	gulp.watch(['libs/**/*.js', 'app/js/_custom.js'], gulp.parallel('scripts'));
 	gulp.watch('app/*.html', gulp.parallel('code'));
 	gulp.watch('app/img/_src/**/*', gulp.parallel('img'));

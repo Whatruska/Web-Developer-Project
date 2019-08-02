@@ -1,0 +1,14 @@
+.header{
+    &-content{
+        padding: 15px 0px;
+        &-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-item{
+                white-space: nowrap;
+                margin: 0px 10px;
+            }
+        }
+    }
+}

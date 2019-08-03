@@ -7,6 +7,7 @@
 @import 'about';
 @import 'servicing';
 @import 'portfolio';
+@import 'pricing';
 @import 'footer';
 
 section{
@@ -44,6 +45,7 @@ a, a:hover{
     &:hover{
         border-color: $accent;
         background-color: $accent;
+        color: white;
         a{
             color: white;
         }

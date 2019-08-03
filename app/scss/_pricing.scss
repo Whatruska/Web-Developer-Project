@@ -1,0 +1,90 @@
+.pricing{
+    background-color: $gray;
+    &-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        &-name{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &-desc{
+            margin: 20px 0px;
+            margin-bottom: 100px;
+        }
+    }
+    &-list{
+        &-item{
+            transition: 0.5s all ease;
+            box-shadow: 0px 0px 0px rgba($color: #000000, $alpha: 1.0);
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px;
+            background-color: white;
+            margin-right: 30px;
+            &-header{
+                background-color: $blue;
+                position: relative;
+                width: 100%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                &-price{
+                    font-size: 17px;
+                    padding-bottom: 25px;
+                    span{
+                        font-size: 50px;
+                    }
+                }
+                &-name{
+                    padding: 25px 0px;
+                    font-size: 25px;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    border-top: 40px solid transparent;
+                    border-bottom: 0 solid transparent;
+                    border-right: 340px solid white;
+                }
+            }
+            .features-list{
+                &-item{
+                    text-align: center;
+                    font-size: 17px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: black;
+                    }
+                }
+            }
+            .btn-pricing{
+                border-color: black;
+                margin: 30px 0px;
+            }
+            &:hover{
+                box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.7);
+            }
+        }
+    }
+}

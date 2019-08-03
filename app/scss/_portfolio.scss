@@ -16,7 +16,7 @@
         justify-content: center;
         margin-bottom: 50px;
     }
-    .btn-portfolio{
+    .btn-portfolio, .btn-load-more{
         margin: 0px 10px;
         border-color: black;
         &-active, &:hover{
@@ -24,6 +24,14 @@
             color: white;
             border-color: $accent;
         }
+    }
+    .btn-load-more{
+        margin-top: 100px;
+        padding: 20px 40px;
+    }
+    &-load-more-wrapper{
+        display: flex;
+        justify-content: center;
     }
     &-item{
         opacity: 0;

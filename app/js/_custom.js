@@ -45,5 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		curr = findActive();
 		addClass($('.portfolio-item')[curr], 'portfolio-item-active');
 	});
-	//console.log($('.btn-portfolio')[curr].classList);
+	$('.team-owl-carousel').owlCarousel({
+		loop : true,
+		margin : 200,
+		items : 1
+	});
 });

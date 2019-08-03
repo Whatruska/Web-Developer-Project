@@ -10,11 +10,21 @@
 @import 'pricing';
 @import 'team';
 @import 'blog';
+@import 'contact';
 @import 'footer';
 
 section{
     padding: 100px 0px;
     padding-bottom: 50px;
+}
+
+input,textarea{
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 10px;
+    outline: none;
+    resize: none;
 }
 
 body{

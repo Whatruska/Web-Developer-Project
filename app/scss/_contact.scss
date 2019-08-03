@@ -1,0 +1,82 @@
+.contact{
+    background-image: url('../img/background/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: rgba($color: #000000, $alpha: 0.85);
+        top: 0;
+        left: 0;
+    }
+    &-area{
+        margin-bottom: 40px;
+    }
+    &-title{
+        z-index: 5;
+        color: white;
+        text-align: center;
+        &-name{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        &-desc{
+            margin-bottom: 60px;
+        }
+    }
+    &-container{
+        position: relative;
+        z-index: 5;
+    }
+    &-icons{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 30px;
+        .icon-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .icon{
+                &-label{
+                    text-align: center;
+                }
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: $blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &-input{
+        width: 49.5%;
+    }
+    .btn-row{
+        display: flex;
+        justify-content: flex-end;
+        .btn-send{
+            padding: 15px 70px;
+            border-radius: 15px;
+            background-color: white;
+            &:hover{
+                background-color: $accent;
+            }
+        }
+    }
+}
